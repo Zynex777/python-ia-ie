@@ -1,0 +1,3 @@
+arquivo = open("arquivo_de_texto.txt", "r")
+arquivo = open("arquivo_de_texto.txt", "w")
+arquivo = open("arquivo_de_texto.txt", "a")
