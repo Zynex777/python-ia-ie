@@ -1,0 +1,12 @@
+biblioteca = ferramentas para o programa
+a .venv é um ambiente virtual
+para criar um ambiente virtual
+python -m venv .venv|ou só venv|(nome da pasta)
+ativar o ambiente virtual
+.\.venv\Scripts\Activate.ps1
+o arquivo que impede o envio ao github
+.gitignore
+arquivo de dependencias do projeto
+requeriments.txt
+instalar pygame
+pip install pygame
