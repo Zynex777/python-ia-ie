@@ -1,3 +1,7 @@
+# Projeto em desenvolvimento, preservado sem acrescentar etapas do jogo.
+# Cada quadro processa eventos, atualiza a posição, desenha e exibe a tela.
+# A cobra é uma lista de retângulos: inserir a cabeça e remover a cauda produz movimento.
+
 #importando o pygame
 from sys import exit 
 import pygame
@@ -24,6 +28,7 @@ inicio = [
     pygame.Rect(x,200,TAMANHO_GRAMADO,TAMANHO_GRAMADO)
     for x in (80,60,40)
 ]
+# copy() cria outra lista, mas os objetos Rect iniciais continuam compartilhados.
 cobra = inicio.copy()
 #====================================
 #5 movimento automatico da cobra
@@ -33,13 +38,16 @@ velocidade_y = 0
 
 #looping que mantem a janela aberta
 rodando = True
+# O laço principal representa a sequência de quadros da animação.
 while rodando:
+    # Consome os eventos pendentes de teclado e de fechamento da janela.
     for evento in pygame.event.get():
         if evento.type == QUIT:
             rodando = False
 
         #====================================
         #6 controles do teclado(setas)
+        # O teste do eixo atual impede uma inversão direta para o sentido oposto.
         elif evento.type == KEYDOWN:
             if (evento.key == K_LEFT or evento.key == K_a) and velocidade_x == 0:
                 velocidade_x = - TAMANHO_GRAMADO
@@ -57,6 +65,7 @@ while rodando:
 
     #====================================
     #5 Atualizando a posição da cobra
+    # Cria a próxima cabeça somando o deslocamento às coordenadas atuais.
     cabeca = pygame.Rect(
         cobra[0].x + velocidade_x,
         cobra[0].y + velocidade_y,
@@ -75,6 +84,7 @@ while rodando:
 
     #====================================
     #3 desenhando o fundo quadriculado (grama)
+    # O resto x % 40 alterna o início das faixas para criar o quadriculado.
     for x in range(0,LARGURA,TAMANHO_GRAMADO): #range(inicio,fim,salto)
         for y in range(x % 40,ALTURA,40):
             pygame.draw.rect(
@@ -93,7 +103,9 @@ while rodando:
     #atualiza o que aparece na tela
     pygame.display.flip()
     #manter a taxa de 10 quadros por segundo
-    relogio.tick(10) 
+    # Este valor limita a animação a 15 quadros por segundo.
+    relogio.tick(15) 
 #1. 
+# Sem parênteses, esta linha referencia pygame.quit sem executar a função.
 pygame.quit
 exit()
