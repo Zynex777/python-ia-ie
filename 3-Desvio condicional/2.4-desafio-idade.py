@@ -1,3 +1,6 @@
+# if e elif são testados em ordem: apenas o primeiro ramo verdadeiro é executado.
+# Cada faixa posterior considera que as condições anteriores já foram descartadas.
+
 nome = input("Digite seu nome: ")
 idade = int(input(f"{nome}, digite sua idade: "))
 if idade == 0:

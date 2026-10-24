@@ -1,3 +1,7 @@
+# Os métodos modificam a lista: append adiciona ao final e insert insere por índice.
+# Atribuição por índice substitui; del remove; pop remove e retorna o valor.
+# Inserções e remoções alteram os índices dos elementos seguintes.
+
 import random
 lista_inicial = ["joao", "pamela", "dominique"]
 print(f"lista_inicial: {lista_inicial}")

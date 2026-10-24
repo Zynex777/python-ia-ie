@@ -1,3 +1,7 @@
+# Exporta uma lista de linhas para CSV: a primeira linha contém os títulos.
+# O modo "w" substitui o arquivo; writerows() grava todas as linhas.
+# newline="" deixa o controle das quebras de linha para o módulo csv.
+
 import csv
 dados_tabela = [
     ["BAIRRO", "CIDADE", "ESTADO", "CEP"],

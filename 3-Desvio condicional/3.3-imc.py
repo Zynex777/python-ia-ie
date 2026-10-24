@@ -1,3 +1,6 @@
+# Condições encadeadas escolhem a primeira faixa correspondente ao valor calculado.
+# :.2f formata a saída. O último else repete o texto da faixa anterior no original.
+
 ##solicitando os dados do paciente
 nome = input("Qual o seu nome? ") 
 peso = float(input(f"{nome}, Qual o seu peso? (kg) "))

@@ -1,3 +1,7 @@
+# def define funções; seus corpos só executam quando elas são chamadas.
+# not in mantém a pergunta enquanto o operador não pertence à lista permitida.
+# As funções imprimem resultados; dividir verifica zero antes da divisão.
+
 def somar(item1, item2):
     resultado = item1 + item2
     print(resultado)

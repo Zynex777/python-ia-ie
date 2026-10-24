@@ -1,3 +1,6 @@
+# Condições aninhadas: a carteira é verificada dentro do ramo de maioridade.
+# A indentação determina a qual if cada else pertence. A resposta esperada é "s".
+
 nome = input("Digite seu nome: ").capitalize() ## pesquisei no google como usar o capitalize
 idade = int(input("Digite sua idade: "))
 possui_carteira = input("Possui Carteira de motorista?(s/n) ")

@@ -1,3 +1,6 @@
+# Importa as funções do arquivo operacoes.py, localizado na mesma pasta.
+# Cada chamada retorna o valor inserido na f-string; divisor zero gera erro nesta versão.
+
 from operacoes import somar,subtrair,multiplicar,dividir
 #from arquivo_aonde_esta_as_funcoes import nomes,das,funcoes
 

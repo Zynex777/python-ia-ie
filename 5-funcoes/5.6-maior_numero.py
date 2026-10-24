@@ -1,3 +1,6 @@
+# A função retorna o maior número ou um texto se os valores forem iguais.
+# O código que recebe o retorno distingue a mensagem do resultado numérico.
+
 def maior_numero(x,y):
     if x > y:
         return x

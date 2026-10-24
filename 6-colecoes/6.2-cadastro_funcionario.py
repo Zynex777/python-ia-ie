@@ -1,3 +1,7 @@
+# Dicionários aninhados organizam registros por um identificador em texto.
+# O primeiro acesso seleciona o registro; o segundo seleciona um campo.
+# A lista de habilidades guarda vários valores dentro de cada funcionário.
+
 #criando dicionario composto de cadastro de funcionario0
 funcionarios = {
     "44356":{

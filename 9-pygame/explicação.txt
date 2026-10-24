@@ -10,3 +10,23 @@ arquivo de dependencias do projeto
 requeriments.txt
 instalar pygame
 pip install pygame
+
+Explicações complementares
+Uma biblioteca reúne recursos reutilizáveis. import permite acessá-los no programa.
+O ambiente virtual isola os pacotes de um projeto dos demais ambientes Python.
+O nome .venv é uma convenção para a pasta desse ambiente.
+Na anotação de criação acima, as barras verticais separam alternativas de nome;
+elas não fazem parte do comando de criação do ambiente.
+Ativar o ambiente faz o terminal priorizar seu interpretador e seus comandos.
+.gitignore contém padrões de arquivos que o Git deve ignorar;
+ele não remove automaticamente arquivos que já estejam sendo rastreados.
+O nome convencional do arquivo de dependências é requirements.txt
+(a grafia requeriments.txt na anotação original está preservada).
+O comando de instalação acima deve ser usado no ambiente desejado.
+
+No snake.py, pygame.init() inicializa os módulos e set_mode() cria a tela.
+Rect representa posição e tamanho; a origem (0, 0) fica no canto superior esquerdo.
+O eixo x aumenta para a direita e o eixo y aumenta para baixo.
+O laço principal trata eventos, move os segmentos, desenha e atualiza a tela.
+Clock.tick(15) limita a taxa a 15 quadros por segundo; não garante esse ritmo.
+O jogo permanece no estágio atual, sem implementar novas funcionalidades.

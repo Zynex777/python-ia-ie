@@ -1,3 +1,7 @@
+# Rascunho de dicionário aninhado, preservado no estado atual.
+# Chaves repetidas sobrescrevem valores anteriores, restando a última "45623".
+# A consulta a "4435" encontra uma chave ausente e causa KeyError.
+
 # Criando dicionário de cadastro de funcionário
 funcionarios = {
         "45623":{"nome": "Mimi",

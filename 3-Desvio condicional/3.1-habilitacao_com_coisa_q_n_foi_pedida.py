@@ -1,3 +1,7 @@
+# Tentativa de validação preservada sem concluir.
+# .capitalize sem parênteses guarda o método, sem executá-lo.
+# A string "S" isolada após or é verdadeira, então a condição atual mantém o laço ativo.
+
 nome = input("Digite seu nome: ").capitalize() ## pesquisei no google como usar o capitalize
 i = 0
 idade = int(input("Digite sua idade: "))

@@ -1,3 +1,7 @@
+# Módulo de funções aritméticas: recebe dois valores e retorna o resultado.
+# Diferentemente de print(), return permite reutilizar o valor em outra expressão.
+# A divisão usa / e não trata divisor zero.
+
 def somar (item1, item2):
     resultado = item1 + item2
     return resultado

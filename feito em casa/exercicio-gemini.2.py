@@ -1,3 +1,6 @@
+# if/elif/else selecionam uma mensagem conforme a faixa de valor da compra.
+# O exemplo informa a porcentagem, sem calcular o desconto ou o preço final.
+
 # desconto progressivo
 valor = float(input("Qual foi o valor da sua compra? "))
 

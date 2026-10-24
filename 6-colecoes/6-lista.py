@@ -1,3 +1,6 @@
+# Lista é uma coleção ordenada entre colchetes. O for percorre seus itens na ordem.
+# Atribuir a a pdf guarda o nome em texto; não abre nem verifica um arquivo.
+
 #criando dicionario de produto
 #x = [0]
 #y = ("dia", "mes", "ano")

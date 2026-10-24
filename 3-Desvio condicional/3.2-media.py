@@ -1,3 +1,6 @@
+# Calcula a média e testa as faixas em ordem: menor que 4, até 6 e demais valores.
+# Na f-string, :.2f exibe duas casas decimais sem mudar o valor da variável.
+
 nome = input("Qual o seu nome? ")
 nota1 = float(input(f"{nome}, qual foi sua primeira nota? "))
 nota2 = float(input(f"{nome}, qual foi sua segunda nota? "))

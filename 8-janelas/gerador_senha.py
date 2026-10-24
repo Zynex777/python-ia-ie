@@ -1,3 +1,8 @@
+# Interface Tkinter: widgets recebem entradas e o botão chama gerar_senha.
+# BooleanVar guarda as opções; get() consulta seus valores atuais.
+# As categorias selecionadas compõem o conjunto disponível para sorteio.
+# Isso não garante a presença de cada categoria na senha sorteada.
+
 # Importando a biblioteca e nomeando de tk
 from functions import teste_botao
 import tkinter as tk
@@ -11,6 +16,7 @@ fundo = "#FFFFFF"
 
 def gerar_senha():
     erro = "#ff0000"
+    # int() pode gerar ValueError; o except abaixo apresenta o erro na interface.
     try:
         tamanho = int(entry_tamanho_senha.get())
         #verificando se a quantidade de caracteres é menor doque 4
@@ -20,6 +26,7 @@ def gerar_senha():
                 fg=erro
             )
             return
+        # Constrói uma string com todos os caracteres das categorias marcadas.
         caracteres = ""
         if var_maiuscula.get():
             caracteres += string.ascii_uppercase
@@ -36,6 +43,7 @@ def gerar_senha():
                 fg=erro
             )
             return
+        # Sorteia tamanho caracteres e join() os une sem separador.
         senha = "".join(rdm.choice(caracteres) for i in range(tamanho))
         lbl_resultado.config(
             text=f"Senha: {senha}",
@@ -54,6 +62,7 @@ def gerar_senha():
 #==================================================#
 # 1. Configuração da janela principal
 #==================================================#
+# Tk() cria a janela principal; os widgets são organizados dentro dela.
 janela = tk.Tk()
 janela.title("Gerador De Senhas em python")
 janela.config(bg=back)
@@ -99,6 +108,7 @@ entry_tamanho_senha.pack(pady=5)
 #==================================================#
 # 5. criando as variaveis de controle true or false
 #==================================================#
+# Cada caixa de seleção compartilha seu estado com uma BooleanVar.
 var_maiuscula = tk.BooleanVar(value=False)
 var_minuscula = tk.BooleanVar(value=False)
 var_numeros = tk.BooleanVar(value=False)
@@ -160,6 +170,7 @@ chk_simbolos.pack(anchor="w",padx=60, pady=2)
 # 7. Criar botao gerador de senha
 #==================================================#
 
+# command recebe a função sem parênteses para chamá-la somente ao clicar.
 btn_gerar = tk.Button(
     janela,
     text="Gerar Senha Segura",
@@ -188,5 +199,6 @@ lbl_resultado.pack()
 # 9. Execução da janela
 #==================================================#
 # Mantém a janela aberta e escutando eventos
+# O laço de eventos mantém a interface ativa e responde às ações do usuário.
 janela.mainloop()
 

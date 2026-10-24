@@ -1,3 +1,6 @@
+# capitalize() normaliza s/n para S/N; and rejeita respostas diferentes das duas.
+# i = 1 encerra a validação; depois, as condições escolhem o atendimento.
+
 # caixa de atendimento
 idade = int(input("Qual sua idade? "))
 i = 0

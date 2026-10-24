@@ -1,3 +1,7 @@
+# datetime.now() consulta a data local; a diferença dos anos fornece idade aproximada.
+# Atenção: o ajuste exige mês E dia menores simultaneamente e não cobre todos os aniversários.
+# A lógica original permanece para estudo.
+
 from datetime import datetime
 
 # Obtém a data e hora atual do sistema

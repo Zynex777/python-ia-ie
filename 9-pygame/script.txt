@@ -1,3 +1,12 @@
 .\.venv\Scripts\Activate.ps1
 
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+Explicação dos comandos acima
+A primeira linha ativa o ambiente virtual no PowerShell, partindo da pasta
+que contém .venv. Ela se aplica à sessão atual do terminal.
+A segunda linha altera a política de execução para o usuário atual do Windows.
+Não é uma ativação do ambiente e seu efeito persiste além da sessão atual.
+RemoteSigned exige assinatura para scripts identificados como provenientes da internet;
+políticas definidas pela organização podem prevalecer sobre essa configuração.
+As linhas estão mantidas como anotações e não foram executadas nesta revisão.

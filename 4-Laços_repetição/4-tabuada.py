@@ -1,3 +1,6 @@
+# Tabuada com uma saída explícita para cada multiplicação.
+# A f-string insere na mensagem o valor das expressões entre chaves.
+
 numero = 5
 
 print(f"{numero} X 1 = {numero * 1}")

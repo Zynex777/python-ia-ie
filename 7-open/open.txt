@@ -1,3 +1,14 @@
 arquivo = open("arquivo_de_texto.txt", "r")
 arquivo = open("arquivo_de_texto.txt", "w")
 arquivo = open("arquivo_de_texto.txt", "a")
+
+Explicação dos modos de abertura
+"r" (read): lê um arquivo existente; gera erro se ele não existir.
+"w" (write): cria um arquivo ou apaga seu conteúdo anterior ao abrir.
+"a" (append): cria um arquivo ou acrescenta dados ao final, preservando os anteriores.
+As três linhas acima são alternativas de estudo, não uma sequência necessária.
+Cada abertura devolve um objeto de arquivo; atribuir outro objeto à mesma variável
+não é uma forma de fechar explicitamente o anterior.
+Nos exemplos do curso, with gerencia o fechamento ao sair do bloco.
+encoding="utf-8" define a codificação do texto; não converte números automaticamente.
+Caminhos relativos são resolvidos a partir da pasta de execução, não da pasta do script.

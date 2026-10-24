@@ -1,3 +1,6 @@
+# or resulta em True quando pelo menos uma condição é verdadeira.
+# >= inclui o limite e == compara valores. A resposta é comparada exatamente com "s".
+
 #solicitando idade e se é estudante
 idade = int(input("Digite sua idade: "))
 estudante = input("Você é estudante? s/n: ")
