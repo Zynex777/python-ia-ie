@@ -1,0 +1,14 @@
+#bytecode e cache do python
+__pycache__/
+*.pyc
+
+#ambiente virtual
+.venv/
+venv/
+
+#segredos e variaveis de ambiente
+.env
+
+#arquivos da IDE / Editoro
+.vscode/
+.idea/
